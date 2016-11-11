@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="359dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/cd"
+        android:id="@+id/imageView"
+        android:layout_weight="0.02" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Username"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:selectAllOnFocus="false"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Password"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_gravity="center"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/loginButton"
+        android:background="@android:color/holo_green_dark" />
+
+    <TextView
+        android:id="@+id/tvRegisterHere"
+        android:text="Register here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_red_light" />
+
+</LinearLayout>
