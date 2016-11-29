@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.uri3l.myapplication">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_persons"
-        android:label="Persons"
+        android:icon="@mipmap/ic_store"
+        android:label="Store"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.uri3l.application.Authentication.LoginActivity">
+        <activity android:name="com.example.uri3l.myapplication.Authentication.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.uri3l.application.Authentication.RegisterActivity" />
+        <activity android:name="com.example.uri3l.myapplication.Authentication.RegisterActivity" />
         <activity
-            android:name="com.example.uri3l.application.Controller.MainActivity"
-            android:label="Persons"
+            android:name="com.example.uri3l.myapplication.PersonController.MainActivity"
+            android:label="Store"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAeoXe4vCIOz4i-Zpw1C5x3EGoBKwiNl2Y" />
     </application>
 
 </manifest>

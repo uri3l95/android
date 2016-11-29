@@ -7,7 +7,7 @@
             android:icon="@mipmap/ic_person_black_24dp"
             android:title="Persons" />
         <item
-            android:id="@+id/nav_addPerson"
+            android:id="@+id/nav_AddPerson"
             android:icon="@mipmap/ic_person_add_black_24dp"
             android:title="Add person" />
         <item
@@ -15,9 +15,16 @@
             android:icon="@mipmap/ic_account_circle_black_24dp"
             android:title="Account" />
         <item
+            android:id="@+id/nav_sendEmail"
+            android:icon="@mipmap/ic_account_circle_black_24dp"
+            android:title="Send Email" />
+        <item
+            android:id="@+id/nav_googleMaps"
+            android:icon="@mipmap/ic_add_location_black_24dp"
+            android:title="View Maps"/>
+        <item
             android:id="@+id/nav_logout"
             android:icon="@mipmap/ic_power_settings_new_black_24dp"
             android:title="Logout" />
-
     </group>
 </menu>

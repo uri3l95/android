@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.uri3l.myapplication.PersonController.AddPersonFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:id="@+id/PersonFirstName"
+        android:hint="First Name" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="27dp"
+        android:id="@+id/PersonLastName"
+        android:hint="Last Name"
+        android:layout_below="@+id/PersonFirstName"
+        android:layout_alignLeft="@+id/PersonFirstName"
+        android:layout_alignStart="@+id/PersonFirstName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/PersonLastName"
+        android:layout_alignRight="@+id/PersonLastName"
+        android:layout_alignEnd="@+id/PersonLastName"
+        android:layout_marginTop="25dp"
+        android:id="@+id/Email"
+        android:hint="Email" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="22dp"
+        android:id="@+id/PersonAge"
+        android:hint="Age"
+        android:layout_below="@+id/Email"
+        android:layout_alignLeft="@+id/Email"
+        android:layout_alignStart="@+id/Email" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_below="@+id/PersonAge"
+        android:layout_alignLeft="@+id/PersonAge"
+        android:layout_alignStart="@+id/PersonAge"
+        android:layout_marginTop="32dp"
+        android:id="@+id/PersonPhone"
+        android:hint="Phone" />
+
+
+    <Button
+        android:text="Add Person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AddPersonButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="77dp" />
+
+    <Spinner
+        android:id="@+id/cspinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/PersonPhone"
+        android:layout_alignRight="@+id/PersonPhone"
+        android:layout_alignEnd="@+id/PersonPhone"
+        android:layout_alignLeft="@+id/PersonPhone"
+        android:layout_alignStart="@+id/PersonPhone" />
+
+
+</RelativeLayout>

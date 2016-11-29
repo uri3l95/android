@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.uri3l.myapplication.PersonController.MapFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="Select Person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="14sp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/personspinner"
+        android:layout_toStartOf="@+id/personspinner"
+        android:layout_marginRight="66dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginTop="148dp" />
+
+    <Spinner
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/personspinner"
+        android:layout_marginRight="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

@@ -13,6 +13,13 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     android:weightSum="1">
 
+    <ImageView
+        android:layout_width="259dp"
+        android:layout_height="76dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/imageView"
+        android:layout_weight="0.40" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

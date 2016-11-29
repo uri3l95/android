@@ -2,15 +2,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.uri3l.application.Controller.MainFragment">
+    tools:context="com.example.uri3l.myapplication.PersonController.MainFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
-    <Button
-        android:text="MAin"
+    <TextView
+        android:text="Welcome to our Store"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button4"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginTop="217dp"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif-monospace"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_red_dark" />
 </RelativeLayout>

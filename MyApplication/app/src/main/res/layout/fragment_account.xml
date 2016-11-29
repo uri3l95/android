@@ -2,15 +2,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.uri3l.application.Controller.AccountFragment">
+    tools:context="com.example.uri3l.myapplication.PersonController.AccountFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
-    <Button
-        android:text="Account"
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button3"
-        android:layout_centerVertical="true"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="80dp"
+        android:id="@+id/UserFirstName"
+        android:hint="First Name"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="23dp"
+        android:id="@+id/UserLastName"
+        android:hint="Last Name"
+        android:layout_below="@+id/UserFirstName"
+        android:layout_alignLeft="@+id/UserFirstName"
+        android:layout_alignStart="@+id/UserFirstName" />
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UserLastName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:id="@+id/saveButton"
+        style="@style/Widget.AppCompat.Button"
+        android:background="@android:color/holo_green_dark" />
 </RelativeLayout>
